@@ -10,8 +10,8 @@ DATABASE = 'todo'
 USERNAME = 'root'
 PASSWORD = 'qwe123'
 
-DB_URI = 'mysql+pymysql://{}:{}@{}{}/{}?charset=utf8'.format(USERNAME, PASSWORD, HOST, PORT, DATABASE)
-
+DB_URI = 'mysql+pymysql://{}:{}@{}:{}/{}?charset=utf8'.format(USERNAME, PASSWORD, HOST, PORT, DATABASE)
+print(DB_URI)
 
 engine = create_engine(DB_URI)
 DBSession = sessionmaker(engine)
