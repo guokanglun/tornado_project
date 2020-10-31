@@ -8,7 +8,8 @@
 </head>
 
 <body>
-    explore 页面
+    {% for thumb in thumbs %}
+    <img src="/{{ thumb }}" alt="" style="width: 200px; height: 200px;"> {% end %}
 </body>
 
 </html>

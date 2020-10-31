@@ -8,7 +8,8 @@
 </head>
 
 <body>
-    <img src="static/images/UFO,艺术品.jpg" alt="" style="width: 200px; height: 200px;">
+    {% for pic_path in pic_list %}
+    <img src="/{{ pic_path }}" alt="" style="width: 200px; height: 200px;"> {% end %}
 </body>
 
 </html>

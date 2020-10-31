@@ -19,7 +19,8 @@ class Application(tornado.web.Application):
             (r'/', main.IndexHandler),
             (r'/explore', main.ExploreHandler),
             # 动态传参
-            (r'/post/(?P<post_id>\d+)', main.PostHandler)
+            (r'/post/(?P<post_id>\d+)', main.PostHandler),
+            (r'/upload', main.UploadHandler)
         ]
         settings = dict(
             debug=True,
